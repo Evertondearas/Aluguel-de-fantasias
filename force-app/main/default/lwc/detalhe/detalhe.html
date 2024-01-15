@@ -1,0 +1,27 @@
+<template>
+    
+    <template lwc:if={fantasia}>
+        <div class="container">
+            <div>Nome: {fantasia.Name}.</div>
+            <div>Tamanho: {fantasia.Tamanho__c}.</div>
+            <div>Valor diário do aluguel: R$ {fantasia.valor_diario_aluguel__c}.</div>
+            <div>Cor: {fantasia.Cor__c}.</div>
+            <div>Status da fantasia: {fantasia.Status_da_fantasia__c}.</div>
+            
+            <template lwc:if={butao} >
+                <button 
+                onclick={handleClick} 
+                aria-haspopup="dialog"                  
+                >ALUGAR</button>    
+            </template>
+            
+            
+        </div>
+    </template>
+
+
+
+    <template lwc:else>
+        <div>Selecione uma fantasia</div>
+    </template>    
+</template>
