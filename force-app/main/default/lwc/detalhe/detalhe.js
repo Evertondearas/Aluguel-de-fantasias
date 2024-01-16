@@ -1,13 +1,15 @@
 import { LightningElement, wire, api, track} from 'lwc';
 import getFantasiasList from "@salesforce/apex/fantasias.getFantasiasList";
+import {refreshApex} from'@salesforce/apex';
 import Modal from 'c/modal';
 import './detalhe.css';
+
 
 
 export default class Detalhe extends LightningElement {
 
     @wire(getFantasiasList) listaFantasias;
-
+    
     @track fantasia;
 
     _fantasiaId = undefined;
@@ -28,7 +30,8 @@ export default class Detalhe extends LightningElement {
     }
 
     async handleClick() {
-        const result = await Modal.open({
+        await Modal.open({
         });
+        refreshApex(this.listaFantasias);
     }
 }

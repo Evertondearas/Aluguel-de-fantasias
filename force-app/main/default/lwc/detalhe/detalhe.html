@@ -2,13 +2,13 @@
     
     <template lwc:if={fantasia}>
         <div class="container">
-            <div>Nome: {fantasia.Name}.</div>
-            <div>Tamanho: {fantasia.Tamanho__c}.</div>
-            <div>Valor diário do aluguel: R$ {fantasia.valor_diario_aluguel__c}.</div>
-            <div>Cor: {fantasia.Cor__c}.</div>
-            <div>Status da fantasia: {fantasia.Status_da_fantasia__c}.</div>
+            <div><p class="detail">Nome:</p> <p class="fields">{fantasia.Name}.</p></div>
+            <div><p class="detail">Tamanho:</p> <p class="fields">{fantasia.Tamanho__c}.</p></div>
+            <div><p class="detail">Valor diário do aluguel:</p> <p class="fields">R$ {fantasia.valor_diario_aluguel__c}.</p></div>
+            <div><p class="detail">Cor:</p> <p class="fields">{fantasia.Cor__c}.</p></div>
+            <div><p class="detail">Status da fantasia:</p> <p class="fields">{fantasia.Status_da_fantasia__c}.</p></div>
             
-            <template lwc:if={butao} >
+            <template lwc:if={butao}>
                 <button 
                 onclick={handleClick}                   
                 >ALUGAR</button>    

@@ -9,4 +9,13 @@ template{
     margin:5px;
     padding: 2px;
     max-width: 210px;
+    display: flex;
+    flex-direction: column;
 }
+.detail{
+    color: blue;
+}
+.fields{
+    color: rgb(0, 242, 255);
+}
+
