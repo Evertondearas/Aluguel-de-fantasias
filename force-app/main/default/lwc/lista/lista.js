@@ -10,5 +10,7 @@ export default class Lista extends LightningElement {
         detail: evt.detail
     });
     this.dispatchEvent(event);
+    refreshApex(this.Fantasias)
+
   }
 }
