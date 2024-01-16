@@ -10,6 +10,7 @@ export default class Modal extends LightningModal {
 
     handleOkay() {
         this.close('okay');
+        console.log("fechou");
     }
     
     aluguelObject = Aluguel_de_fantasia__c_OBJECT;

@@ -1,4 +1,4 @@
-import { LightningElement, api, track} from 'lwc';
+import { LightningElement, api} from 'lwc';
 import './item.css';
 export default class Item extends LightningElement {
  

@@ -1,21 +1,20 @@
-import { LightningElement, wire, api} from 'lwc';
+import { LightningElement, wire, api, track} from 'lwc';
 import getFantasiasList from "@salesforce/apex/fantasias.getFantasiasList";
 import Modal from 'c/modal';
 import './detalhe.css';
-import { refreshApex } from '@salesforce/apex';
 
 
 export default class Detalhe extends LightningElement {
 
     @wire(getFantasiasList) listaFantasias;
 
-    fantasia;
+    @track fantasia;
 
     _fantasiaId = undefined;
 
     set fantasiaId(valor){
         this._fantasiaId = valor;
-        if (this.listaFantasias && this.listaFantasias.data){
+        if (this.listaFantasias && this.listaFantasias.data) {
             this.fantasia = this.listaFantasias.data.find(fantasy => fantasy.Id === valor);
         }
     }
@@ -29,8 +28,7 @@ export default class Detalhe extends LightningElement {
     }
 
     async handleClick() {
-        await Modal.open({
+        const result = await Modal.open({
         });
     }
-    
 }
