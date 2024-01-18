@@ -8,6 +8,9 @@
             <div><p class="detail">Cor:</p> <p class="fields">{fantasia.Cor__c}.</p></div>
             <div><p class="detail">Status da fantasia:</p> <p class="fields">{fantasia.Status_da_fantasia__c}.</p></div>
             
+            <img src={imagePath} alt="sutton fantasy">
+
+
             <template lwc:if={butao}>
                 <button 
                 onclick={handleClick}                   
@@ -20,6 +23,6 @@
 
 
     <template lwc:else>
-        <div>Selecione uma fantasia</div>
+        <div class="else">Selecione uma fantasia</div>
     </template>    
 </template>

@@ -13,9 +13,14 @@ template{
     flex-direction: column;
 }
 .detail{
-    color: blue;
+    color: black;
+    font-weight: bold;
 }
 .fields{
-    color: rgb(0, 242, 255);
+    color: blue;
+    font-weight: bold;
+}
+.else{
+    color: white;
 }
 

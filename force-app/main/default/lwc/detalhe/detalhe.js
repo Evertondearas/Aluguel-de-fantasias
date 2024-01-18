@@ -4,13 +4,11 @@ import {refreshApex} from'@salesforce/apex';
 import Modal from 'c/modal';
 import './detalhe.css';
 
-
-
 export default class Detalhe extends LightningElement {
 
     @wire(getFantasiasList) listaFantasias;
     
-    @track fantasia;
+    fantasia;
 
     _fantasiaId = undefined;
 

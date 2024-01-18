@@ -1,14 +1,14 @@
 .principal{
     display: flex;
-    background-color: burlywood;
+    background-color: rgb(91, 91, 91);
     border-radius: 10px;
 }
 .estrutura{
-    background-color: white;
+    background-color: rgb(255, 250, 250);
     border-radius: 10px;
 }
 .side{
-    background-color: rgb(169, 126, 70);
+    background-color: rgb(28, 28, 28);
     width: 400px;
     display: flex;
     flex-direction: column;

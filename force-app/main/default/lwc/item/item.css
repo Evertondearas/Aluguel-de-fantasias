@@ -1,8 +1,8 @@
 .container{
 
-    border: 1px rgb(168, 166, 166) solid;
+    /*border: 1px rgb(168, 166, 166) solid;*/
     border-radius: 5px;
-    background-color: white;
+    background-color: rgb(28, 28, 28);
     margin:5px;
     padding: 2px;
     width: 120px;
@@ -11,16 +11,5 @@
 
 a{
     text-decoration: none;
-}
-a:link {
-    color: rgb(159, 159, 159);
-}
-a:visited {
-    color: red;
-}
-a:hover {
-    color: purple;
-}
-a:active {
-    color: blue;
+    color: white;
 }
